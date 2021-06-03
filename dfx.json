@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icdrive": {
+      "main": "src/icdrive/main.mo",
+      "type": "motoko"
+    },
+    "icdrive_assets": {
+      "dependencies": [
+        "icdrive"
+      ],
+      "frontend": {
+        "entrypoint": "src/icdrive_assets/index.jsx"
+      },
+      "type": "assets"
+    }
+  },
+  "dfx": "0.6.26",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
+
